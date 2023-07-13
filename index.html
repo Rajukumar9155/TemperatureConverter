@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temperature Converter </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputFields">
+            Enter the Number
+            <input type="number" id="number" placeholder="Enter The Number" required>
+            Entered Number Is In :
+            <select name="dropDown" id="dropDown">
+                <option> Celsius </option>
+                <option> Farenheit </option>
+                <option> Kelvin </option>
+            </select>
+            Want To Convert In :
+            <select name="expectedUnit" id="expectedUnit">
+                <option> Farenheit </option>
+                <option> Celsius </option>
+                <option> Kelvin </option>
+            </select>
+
+            <button onclick="converter()"> Convert </button>
+        </div>
+        <div class="output">
+            <p> Temperature Entered By You : <span class="enteredTemp"></span> </p>
+            <p class="afterConversion"> Temperature After Conversion Is : <span class="outputTemp"></span> </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
